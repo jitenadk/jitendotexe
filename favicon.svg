@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Megrim, Megrim;
+        font-size: 243.81px;
+      }
+
+      .cls-2 {
+        fill: #1d263b;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-2" x=".5" y=".5" width="256" height="256" rx="49.9" ry="49.9"/>
+    <path d="m50.4,0v1h155.19c27.24,0,49.4,22.16,49.4,49.4v155.19c0,27.24-22.16,49.4-49.4,49.4H50.4c-27.24,0-49.4-22.16-49.4-49.4V50.4c0-27.24,22.16-49.4,49.4-49.4V0M50.4,0C22.57,0,0,22.57,0,50.4v155.19c0,27.84,22.57,50.4,50.4,50.4h155.19c27.84,0,50.4-22.57,50.4-50.4V50.4C256,22.57,233.43,0,205.6,0H50.4Z"/>
+  </g>
+  <text class="cls-1" transform="translate(0 207.24)"><tspan x="0" y="0">JA</tspan></text>
+</svg>
