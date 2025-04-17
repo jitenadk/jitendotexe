@@ -26,7 +26,6 @@
     <meta name="keywords"
         content="Jiten Adhikari, Jiten Adhikari Portfolio, Jiten Adhikari Photography, photographer, developer, C, C++, python, html, css, javascript, web developer, portfolio,">
     <meta name="robots" content="noindex, nofollow" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <link rel="canonical" href="#" />
 
@@ -44,37 +43,24 @@
     <link rel="stylesheet" href="./css/projects.css" type="text/css">
     <link rel="stylesheet" href="./css/footer.css" type="text/css">
 
-    <script>
-        $(function () {
-            var includes = $('[data-include]')
-            $.each(includes, function () {
-                var file = 'views/' + $(this).data('include') + '.html'
-                $(this).load(file)
-            })
-        })
-    </script>
+    <!-- Add jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- Script to load header and footer -->
+    <script>
+        $(document).ready(function () {
+            // Load header
+            $("#header-placeholder").load("./header.html");
+            // Load footer
+            $("#footer-placeholder").load("./footer.html");
+        });
+    </script>
 </head>
 
 <body>
-
-    <!-- <div id="includedContent"></div> -->
-    <div data-include="./header"></div>
-
-
-    <header class="header">
-        <a href="/index" class="header-logo">@jitendotexe</a>
-        <nav class="nav">
-            <div class="toggle"><i class="fas fa-bars"></i></div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="/index">Home</a></li>
-                <li class="nav-item"><a href="/about">About</a></li>
-                <li class="nav-item"><a href="/projects">Projects</a></li>
-                <li class="nav-item"><a href="/photos">Photos</a></li>
-                <li class="nav-item"><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Placeholder for header -->
+    <div id="header-placeholder"></div>
 
     <main class="main-container home-section">
         <section id="home">
@@ -87,7 +73,8 @@
                         based in Kathmandu, Nepal.</p>
                 </div>
                 <div class="cta-container email-container">
-                    <a href="mailto:jitenadhikari001@gmail.com" class="cta email-button">
+                    <a href="/cdn-cgi/l/email-protection#b59f9c81909b94919d9c9e94879cc5c5c4b59298949c99db969a98"
+                        class="cta email-button">
                         <img src="./img/email.svg" alt="Email Icon">
                         <span>Say Hello</span>
                     </a>
@@ -99,8 +86,7 @@
             <div class="landing-page-socials">
                 <ul>
                     <li class="social-link">
-                        <a href="https://www.linkedin.com/in/jiten-adhikari-b98462219/" aria-label="LinkedIn"
-                            target="_blank">
+                        <a href="https://www.linkedin.com/in/jitenadk/" aria-label="LinkedIn" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
@@ -122,197 +108,13 @@
                 </ul>
             </div>
         </section>
-        <!--
-        <section class="projects" id="select-projects">
-            <h2>Select Projects</h2>
-            <p class="section-description">
-                Here are some personal projects I have worked on.<br>
-                You can find more on <a class="hyperlink" href="https://github.com/jitenadk">GitHub</a>.
-            </p>
-            <div class="project-cards-container">
-                <div class="card">
-                    <img src="./img/project-preview/lab1.jpg" alt="Project Preview Screenshot" class="card-preview-img">
-                    <div class="card-info">
-                        <div class="title-and-links">
-                            <span class="project-title">
-                                Lab Exercise-1
-                            </span>
-                            <div class="project-links">
-
-                                <a href="https://github.com/jitenadk/IT-unit-exercise/tree/main/Unit-5">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-skills">
-                            <span>HTML</span>
-
-                        </div>
-                        <p class="project-description">
-                            This is the Unit-5 exercise of Internet Technology(IT) subject. There are
-                            four diffrent page coded with basic of HTML.You also can acess single page
-                            <a class="hyperlink"
-                                href="https://github.com/jitenadk/IT-unit-exercise/blob/1773c248a99a6ad4479d452b73e407b50944d100/Unit-5/Exercise%201.html">Exercise-1</a>,
-                            <a class="hyperlink" href="a">Exercise-2</a>,
-                            <a class="hyperlink" href="a">Exercise-3</a>
-
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/project-preview/lab2.jpg" alt="Project Preview Screenshot" class="card-preview-img">
-                    <div class="card-info">
-                        <div class="title-and-links">
-                            <span class="project-title">
-                                Lab Exercise-2
-                            </span>
-                            <div class="project-links">
-                                <a href="https://github.com/jitenadk/IT-unit-exercise/tree/main/Unit-6">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-skills">
-                            <span>HTML</span>
-                        </div>
-                        <p class="project-description">
-                            This is the Unit-6 exercise of Internet Technology(IT) subject. There are
-                            four diffrent page coded with basic of HTML.You also can acess single page
-                            <a class="hyperlink" href="http">Exercise-1</a>,
-                            <a class="hyperlink" href="a">Exercise-2</a>,
-                            <a class="hyperlink" href="a">Exercise-3</a>
-
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/project-preview/lab3.jpg" alt="Project Preview Screenshot" class="card-preview-img">
-                    <div class="card-info">
-                        <div class="title-and-links">
-                            <span class="project-title">
-                                Lab Exercise-3
-                            </span>
-                            <div class="project-links">
-                                <a href="https://github.com/jitenadk/IT-unit-exercise/tree/main/Unit-7">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-skills">
-                            <span>HTML</span>
-                        </div>
-                        <p class="project-description">
-                            This is the Unit-7 exercise of Internet Technology(IT) subject. There are
-                            two diffrent page coded with basic of HTML.You also can acess single page
-                            <a class="hyperlink" href="http">Exercise-1</a>,
-                            <a class="hyperlink" href="a">Exercise-2</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/project-preview/lab4.jpg" alt="Project Preview Screenshot" class="card-preview-img">
-                    <div class="card-info">
-                        <div class="title-and-links">
-                            <span class="project-title">
-                                CSS - Task
-                            </span>
-                            <div class="project-links">
-                                <a href="https://github.com/jitenadk/IT-unit-exercise/tree/main/Unit-8">
-                                    <i class="fab fa-github"></i>
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="project-skills">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                        </div>
-                        <p class="project-description">
-                            This is the Unit-8 exercise of Internet Technology(IT) subject. There are
-                            only one page coded with basic of HTML and CSS.You also can acess single page
-                            <a class="hyperlink" href="http">Exercise-1</a>
-
-                        </p>
-                    </div>
-                </div>
-                <div class="cta-container">
-                    <a href="/projects" class="cta">
-                        <img src="./img/coding.svg" alt="Code Icon">
-                        <span>Explore More</span>
-                    </a>
-                </div>
-        </section> 
-        -->
     </main>
 
-    <footer class="footer-container">
-        <div class="footer">
-            <div class="footer-column">
-                <a href="/index" class="footer-logo">@jitendotexe</a>
-                <div class="socials">
-                    <ul>
-                        <li class="social-link">
-                            <a href="https://www.linkedin.com/in/jiten-adhikari-b98462219/" aria-label="LinkedIn"
-                                target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="social-link">
-                            <a href="https://github.com/jitenadk" aria-label="GitHub" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="social-link">
-                            <a href="https://twitter.com/JitenAdhikari5" aria-label="Twitter" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-link">
-                            <a href="https://www.instagram.com/jiten_adhikari58/" aria-label="Instagram"
-                                target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <span class="copyright"><i class="fas fa-copyright"></i> Jiten Adhikari
-                    2022-2023</span>
-            </div>
-            <div class="footer-column">
-                <a href="/about" class="footer-button">
-                    <img id="smiley" src="./img/swag.png" alt="Smile Icon">
-                    About
-                </a>
-                <a href="/projects" class="footer-button">
-                    <img src="./img/coding.svg" alt="Code Icon">
-                    Projects
-                </a>
-                <a href="/photos" class="footer-button">
-                    <img src="./img/camera.svg" alt="Camera Icon">
-                    Photos
-                </a>
-            </div>
-            <!-- <div class="footer-column">
-                    <a href="/jiten-resume.pdf" class="footer-button">
-                        <img src="./img/resume.svg" alt="Resume Icon">
-                        Resume
-                    </a>
-                    <a href="mailto:jitenadhikari001@gmail.com" class="footer-button">
-                        <img src="./img/email.svg" alt="Email Icon">
-                        Contact
-                    </a>
-                </div> -->
-            <div class="footer-column">
-                <a href="/contact" class="footer-button">
-                    <img src="./img/email.svg" alt="Email Icon">
-                    Contact
-                </a>
-            </div>
-        </div>
-    </footer>
+    <!-- Placeholder for footer -->
+    <div id="footer-placeholder"></div>
 
+    <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
     <script src="./js/main.js"></script>
-
 </body>
 
 </html>

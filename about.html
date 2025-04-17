@@ -46,22 +46,25 @@
         <link rel="stylesheet" href="./css/header.css" type="text/css">
         <link rel="stylesheet" href="./css/about.css" type="text/css">
         <link rel="stylesheet" href="./css/footer.css" type="text/css">
+
+        <!-- Add jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- Script to load header and footer -->
+        <script>
+            $(document).ready(function () {
+                // Load header
+                $("#header-placeholder").load("header.html");
+                // Load footer
+                $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+
     </head>
 
     <body>
-        <header class="header">
-            <a href="/index" class="header-logo">@jitendotexe</a>
-            <nav class="nav">
-                <div class="toggle"><i class="fas fa-bars"></i></div>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="/index">Home</a></li>
-                    <li class="nav-item"><a href="/about">About</a></li>
-                    <li class="nav-item"><a href="/projects">Projects</a></li>
-                    <li class="nav-item"><a href="/photos">Photos</a></li>
-                    <li class="nav-item"><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div id="header-placeholder"></div>
 
         <main class="main-container about-section">
             <section id="profile">
@@ -249,83 +252,7 @@
             </section>-->
         </main>
 
-        <footer class="footer-container">
-            <div class="footer">
-                <div class="footer-column">
-                    <a href="/index" class="footer-logo">@jitendotexe</a>
-                    <div class="socials">
-                        <ul>
-                            <li class="social-link">
-                                <a href="https://www.linkedin.com/in/jiten-adhikari-b98462219/"
-                                    aria-label="LinkedIn" target="_blank">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                            <li class="social-link">
-                                <a href="https://github.com/jitenadk" aria-label="GitHub"
-                                    target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </li>
-                            <li class="social-link">
-                                <a href="https://twitter.com/JitenAdhikari5" aria-label="Twitter"
-                                    target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="social-link">
-                                <a href="https://www.instagram.com/jiten_adhikari58/" aria-label="Instagram"
-                                    target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <span class="copyright"><i class="fas fa-copyright"></i> Jiten Adhikari
-                        2022-2023</span>
-                </div>
-                <div class="footer-column">
-                    <a href="/about" class="footer-button">
-                        <img id="smiley" src="./img/swag.png" alt="Smile Icon">
-                        About
-                    </a>
-                    <a href="/projects" class="footer-button">
-                        <img src="./img/coding.svg" alt="Code Icon">
-                        Projects
-                    </a>
-                    <a href="/photos" class="footer-button">
-                        <img src="./img/camera.svg" alt="Camera Icon">
-                        Photos
-                    </a>
-                </div>
-                <!-- <div class="footer-column">
-                    <a href="https://anniedotexe.notion.site/2f89ab02918142e885a684db6e8d6c53?v=e84b8638720749c9a11741c6790c7022"
-                        class="footer-button">
-                        <img src="./img/blog.svg" alt="Blog Icon">
-                        Thoughts
-                    </a>
-                    <a href="/jiten-resume.pdf" class="footer-button">
-                        <img src="./img/resume.svg" alt="Resume Icon">
-                        Resume
-                    </a>
-                    <a href="mailto:jitenadhikari001@gmail.com" class="footer-button">
-                        <img src="./img/email.svg" alt="Email Icon">
-                        Contact
-                    </a>
-                </div> -->
-                <div class="footer-column">
-
-                    <!--<a href="https://www.polywork.com/anniedotexe" class="footer-button">
-                        <img src="./img/polywork.svg" alt="PolyWork Icon">
-                        Updates
-                    </a>-->
-                    <a href="/contact" class="footer-button">
-                        <img src="./img/email.svg" alt="Email Icon">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </footer>
+        <div id="footer-placeholder"></div>
 
         <script src="./js/main.js"></script>
     </body>
